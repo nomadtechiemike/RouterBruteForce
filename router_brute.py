@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import httplib2
 import urllib
-import urllib2
+from urllib.request import urlopen
 import os
 import optparse
 import subprocess
