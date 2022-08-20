@@ -212,7 +212,7 @@ elif 'ZyXel FR1000Z' in options.router:
 			print("Going into single attack run!!")
 		http_response = attack_run_ZyXel(options.password);
 		run_result = analysis_ZyXel_attack(http_response);
-		print run_result
+		print (run_result)
 	elif options.passlist:
 		with open(options.passlist, 'r') as passlist_file:
 			for line in passlist_file:
