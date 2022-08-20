@@ -186,7 +186,7 @@ if options.router is "Linksys E1200":
 		hash_pass = RSA_MD5_Linksys_hash(options.password);
 		http_response = attack_run_linksys(hash_pass);
 		run_result = analysis_linksys_attack(http_response);
-		print run_result + options.password
+		print (run_result + options.password)
 
 	elif options.passlist:
 		#will execute loop
